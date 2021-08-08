@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MongoDB | rayhomie&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/img/headPic.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <script charset="utf-8" src="/js/showNav.js"></script>
+    <meta name="description" content="雷浩的前端开发之路">
+    <link rel="preload" href="/assets/css/0.styles.1fbdf1a8.css" as="style"><link rel="preload" href="/assets/js/app.27102bc9.js" as="script"><link rel="preload" href="/assets/js/2.8dfe8e5f.js" as="script"><link rel="preload" href="/assets/js/40.eeab06c6.js" as="script"><link rel="prefetch" href="/assets/js/10.a5add0c3.js"><link rel="prefetch" href="/assets/js/100.8c89d648.js"><link rel="prefetch" href="/assets/js/101.fc717ec9.js"><link rel="prefetch" href="/assets/js/102.d6e7edc0.js"><link rel="prefetch" href="/assets/js/103.8030fd4b.js"><link rel="prefetch" href="/assets/js/104.fef64d82.js"><link rel="prefetch" href="/assets/js/105.c3fca9d7.js"><link rel="prefetch" href="/assets/js/106.b504056d.js"><link rel="prefetch" href="/assets/js/107.c31048aa.js"><link rel="prefetch" href="/assets/js/108.ae5626e1.js"><link rel="prefetch" href="/assets/js/11.7c494a87.js"><link rel="prefetch" href="/assets/js/12.d1bbbdaf.js"><link rel="prefetch" href="/assets/js/13.82c9798f.js"><link rel="prefetch" href="/assets/js/14.2e6f50b9.js"><link rel="prefetch" href="/assets/js/15.b827ce0c.js"><link rel="prefetch" href="/assets/js/16.603efcc3.js"><link rel="prefetch" href="/assets/js/17.477dc29c.js"><link rel="prefetch" href="/assets/js/18.ab1b43d7.js"><link rel="prefetch" href="/assets/js/19.e0fa9ba5.js"><link rel="prefetch" href="/assets/js/20.d95066c8.js"><link rel="prefetch" href="/assets/js/21.6cd879b8.js"><link rel="prefetch" href="/assets/js/22.5324ab0e.js"><link rel="prefetch" href="/assets/js/23.9218d6d8.js"><link rel="prefetch" href="/assets/js/24.1e19c27f.js"><link rel="prefetch" href="/assets/js/25.6da3fde7.js"><link rel="prefetch" href="/assets/js/26.edd11d9d.js"><link rel="prefetch" href="/assets/js/27.eb67fea8.js"><link rel="prefetch" href="/assets/js/28.6565b2c5.js"><link rel="prefetch" href="/assets/js/29.23d65dc5.js"><link rel="prefetch" href="/assets/js/3.27135dec.js"><link rel="prefetch" href="/assets/js/30.3ad0f117.js"><link rel="prefetch" href="/assets/js/31.17792233.js"><link rel="prefetch" href="/assets/js/32.412220a3.js"><link rel="prefetch" href="/assets/js/33.dcee5d03.js"><link rel="prefetch" href="/assets/js/34.8aac186c.js"><link rel="prefetch" href="/assets/js/35.479f1f88.js"><link rel="prefetch" href="/assets/js/36.538c8db2.js"><link rel="prefetch" href="/assets/js/37.ca793177.js"><link rel="prefetch" href="/assets/js/38.a0bde2fd.js"><link rel="prefetch" href="/assets/js/39.5475ac02.js"><link rel="prefetch" href="/assets/js/4.74cf67b4.js"><link rel="prefetch" href="/assets/js/41.33dc67c6.js"><link rel="prefetch" href="/assets/js/42.acb457e3.js"><link rel="prefetch" href="/assets/js/43.6fc9fe3f.js"><link rel="prefetch" href="/assets/js/44.eec80764.js"><link rel="prefetch" href="/assets/js/45.f180ce8d.js"><link rel="prefetch" href="/assets/js/46.c2a4d416.js"><link rel="prefetch" href="/assets/js/47.e9ddff76.js"><link rel="prefetch" href="/assets/js/48.5d4fb10f.js"><link rel="prefetch" href="/assets/js/49.fa19c197.js"><link rel="prefetch" href="/assets/js/5.fff2dba8.js"><link rel="prefetch" href="/assets/js/50.1995f55f.js"><link rel="prefetch" href="/assets/js/51.ad9507a6.js"><link rel="prefetch" href="/assets/js/52.a0c7b4b4.js"><link rel="prefetch" href="/assets/js/53.e6270868.js"><link rel="prefetch" href="/assets/js/54.8b2ab146.js"><link rel="prefetch" href="/assets/js/55.d4b94501.js"><link rel="prefetch" href="/assets/js/56.8799f75c.js"><link rel="prefetch" href="/assets/js/57.70252bd5.js"><link rel="prefetch" href="/assets/js/58.b55c98a5.js"><link rel="prefetch" href="/assets/js/59.a40bf0aa.js"><link rel="prefetch" href="/assets/js/6.7a238015.js"><link rel="prefetch" href="/assets/js/60.b32822f8.js"><link rel="prefetch" href="/assets/js/61.96e132e4.js"><link rel="prefetch" href="/assets/js/62.5b156fb7.js"><link rel="prefetch" href="/assets/js/63.252fdde0.js"><link rel="prefetch" href="/assets/js/64.870eb635.js"><link rel="prefetch" href="/assets/js/65.00cf779d.js"><link rel="prefetch" href="/assets/js/66.edfb8eec.js"><link rel="prefetch" href="/assets/js/67.21c62f6c.js"><link rel="prefetch" href="/assets/js/68.e8153158.js"><link rel="prefetch" href="/assets/js/69.c886c8dc.js"><link rel="prefetch" href="/assets/js/7.4ccf6b5f.js"><link rel="prefetch" href="/assets/js/70.103bfe88.js"><link rel="prefetch" href="/assets/js/71.1da9ddc7.js"><link rel="prefetch" href="/assets/js/72.5259cf72.js"><link rel="prefetch" href="/assets/js/73.2e99bbf9.js"><link rel="prefetch" href="/assets/js/74.15325ce0.js"><link rel="prefetch" href="/assets/js/75.feb3fe93.js"><link rel="prefetch" href="/assets/js/76.c6ffd0de.js"><link rel="prefetch" href="/assets/js/77.1f15986e.js"><link rel="prefetch" href="/assets/js/78.26e8059a.js"><link rel="prefetch" href="/assets/js/79.5aecad9a.js"><link rel="prefetch" href="/assets/js/8.086b5469.js"><link rel="prefetch" href="/assets/js/80.0d468094.js"><link rel="prefetch" href="/assets/js/81.869965a4.js"><link rel="prefetch" href="/assets/js/82.5161670c.js"><link rel="prefetch" href="/assets/js/83.24394a20.js"><link rel="prefetch" href="/assets/js/84.4abbb214.js"><link rel="prefetch" href="/assets/js/85.c5442ded.js"><link rel="prefetch" href="/assets/js/86.787b4128.js"><link rel="prefetch" href="/assets/js/87.32e54ac7.js"><link rel="prefetch" href="/assets/js/88.5da20419.js"><link rel="prefetch" href="/assets/js/89.eccb9167.js"><link rel="prefetch" href="/assets/js/9.01377c1a.js"><link rel="prefetch" href="/assets/js/90.538ac538.js"><link rel="prefetch" href="/assets/js/91.ffb107cd.js"><link rel="prefetch" href="/assets/js/92.c683e420.js"><link rel="prefetch" href="/assets/js/93.e4e30951.js"><link rel="prefetch" href="/assets/js/94.6df7640a.js"><link rel="prefetch" href="/assets/js/95.9ea7d0a8.js"><link rel="prefetch" href="/assets/js/96.1659aa5a.js"><link rel="prefetch" href="/assets/js/97.3b3b507b.js"><link rel="prefetch" href="/assets/js/98.12e89dfd.js"><link rel="prefetch" href="/assets/js/99.a2de8da9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1fbdf1a8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">rayhomie's blog</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架学习" class="dropdown-title"><span class="title">框架学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/VUE/vueBase/" class="nav-link">
+  vue基础
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/vueComponent/" class="nav-link">
+  vue组件化编码
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/vue_webpack_modules/" class="nav-link">
+  webpacke模块化开发
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/vue-cli/" class="nav-link">
+  vue-cli脚手架
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/vue-router/" class="nav-link">
+  vue-router路由
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/vuex-learn/" class="nav-link">
+  vuex状态管理
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/VueMixin/" class="nav-link">
+  Mixins混入
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/vueBoost/" class="nav-link">
+  vue性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/axios/" class="nav-link">
+  Axios框架
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/ajax/" class="nav-link">
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/mock/" class="nav-link">
+  mock
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/wxprogram/" class="nav-link">
+  小程序入门
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/uniapp/" class="nav-link">
+  uni-app入门
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/Reactbase/" class="nav-link">
+  React基础入门
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/ReactCli/" class="nav-link">
+  React脚手架
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/Redux/" class="nav-link">
+  Redux
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/react-redux/" class="nav-link">
+  react-redux的实现原理
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/Hooks/" class="nav-link">
+  React Hooks
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/reactRender/" class="nav-link">
+  react渲染和更新机制
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/setState/" class="nav-link">
+  setState进阶
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/nextTick/" class="nav-link">
+  Vue.nextTick进阶
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/reactHighCom/" class="nav-link">
+  react高阶组件
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/Reactevent/" class="nav-link">
+  react合成事件分析
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/frontLogin/" class="nav-link">
+  前端登录
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/CORS&amp;proxy/" class="nav-link">
+  CORS跨域和反向代理
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/XHR&amp;AJAX/" class="nav-link">
+  XHR对象和AJAX
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Node/Nodejs/" class="nav-link">
+  Nodejs服务端
+</a></li><li class="dropdown-item"><!----> <a href="/Node/restudyNode/" class="nav-link">
+  重学Node
+</a></li><li class="dropdown-item"><!----> <a href="/Node/restudyWebpack/" class="nav-link">
+  重学Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/Node/promisify/" class="nav-link">
+  手写util.promisify
+</a></li><li class="dropdown-item"><!----> <a href="/Node/Blob/" class="nav-link">
+  Blob数据
+</a></li><li class="dropdown-item"><!----> <a href="/Node/nodejsStreamCopy/" class="nav-link">
+  nodejs管道流复制文件
+</a></li><li class="dropdown-item"><!----> <a href="/Node/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/Node/gitlabci/" class="nav-link">
+  gitlab-ci
+</a></li><li class="dropdown-item"><!----> <a href="/Node/Express/" class="nav-link">
+  Express
+</a></li><li class="dropdown-item"><!----> <a href="/Node/Koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/Node/koaDeploy/" class="nav-link">
+  koa部署服务器
+</a></li><li class="dropdown-item"><!----> <a href="/Node/MongoDB/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/Node/Mongoose/" class="nav-link">
+  Mongoose
+</a></li><li class="dropdown-item"><!----> <a href="/Node/zx/" class="nav-link">
+  zx库
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript学习" class="dropdown-title"><span class="title">JavaScript学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/note/" class="nav-link">
+  js笔记
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/GOGOFACE/" class="nav-link">
+  校招面试冲刺
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/manager/" class="nav-link">
+  js知识整理
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Promise/" class="nav-link">
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/AOP/" class="nav-link">
+  AOP切面编程(闭包)
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Generator&amp;yield/" class="nav-link">
+  Generator生成器&amp;Iterator迭代器
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/asyncReturn/" class="nav-link">
+  async中return和return await的区别
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/jsFaceObject/" class="nav-link">
+  js面向对象基础--创建对象
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/jsPtototypeChain/" class="nav-link">
+  js面向对象基础--原型链
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/jsBaseExtends/" class="nav-link">
+  js面向对象基础--继承
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/jsPrototypeExtends/" class="nav-link">
+  js原型继承
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/JavaScriptCodeClean/" class="nav-link">
+  JavaScript代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/JavaScriptEventLoop/" class="nav-link">
+  JavaScript事件循环各种概念剖析
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/JavaScriptThisPoint/" class="nav-link">
+  JavaScript简单理解this指向
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/es6this/" class="nav-link">
+  谈谈ES6箭头函数this指向问题
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/environment/" class="nav-link">
+  词法环境[[environment]]--闭包
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/zuoyongyu/" class="nav-link">
+  js函数作用域与闭包相关问题
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/varHosting/" class="nav-link">
+  js中的变量提升和函数提升
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/VO&amp;AO/" class="nav-link">
+  JS中的变量对象VO和活动对象AO
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/JScenter/" class="nav-link">
+  JS核心机制（数据类型、垃圾回收机制）
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/handCallApplyBind/" class="nav-link">
+  手写call、apply、bind
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据结构与算法" class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/DataStructure/note/" class="nav-link">
+  笔记整理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS特效" class="dropdown-title"><span class="title">CSS特效</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSSEffect/moreColumLayout/" class="nav-link">
+  CSS多列布局的实现
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/writeWords/" class="nav-link">
+  打字机效果以及animation中的steps()函数
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/box-shadow/" class="nav-link">
+  CSS的box-shadow创建边框
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/CSSPointshow/" class="nav-link">
+  纯CSS实现的滚动指示器效果
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/img-lazyload/" class="nav-link">
+  图片模糊加载
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/tuozhuai/" class="nav-link">
+  实现一个拖拽
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/positionSticky/" class="nav-link">
+  实现position:sticky
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/lazyLoad/" class="nav-link">
+  实现下拉加载更多，懒加载
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="随便聊聊" class="dropdown-title"><span class="title">随便聊聊</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/talktalk/onePic/" class="nav-link">
+  一张图总结系列
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/argument/" class="nav-link">
+  js的argument
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/bibao/" class="nav-link">
+  闭包个人理解
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/eventloop/" class="nav-link">
+  Event Loop理解
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/chuandicanshu/" class="nav-link">
+  js参数传递理解
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/var/" class="nav-link">
+  聊聊js变量存储的本质和const修改对象问题
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/es6open/" class="nav-link">
+  ES6扩展运算符的使用
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/dataInVue/" class="nav-link">
+  为什么.vue文件中data必须用函数表达
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/jsMaopao/" class="nav-link">
+  浅谈js事件捕获和事件冒泡
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSFaceTest/" class="nav-link">
+  CSS 面试知识点总结
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSFirst/" class="nav-link">
+  CSS 属性继承和优先级算法(权重)
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSSelector/" class="nav-link">
+  了解 CSS 选择器
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSCenter/" class="nav-link">
+  总结一下 CSS 居中的各种方法
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSFloat/" class="nav-link">
+  说说CSS浮动以及清除浮动
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSMargin/" class="nav-link">
+  外边距塌陷问题
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSBFC/" class="nav-link">
+  浅谈BFC
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/HTTP/" class="nav-link">
+  HTTP协议
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/HTTPS/" class="nav-link">
+  聊聊HTTPS工作原理
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/thread/" class="nav-link">
+  进程与线程tcp/ip三次握手
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/HtmlHead/" class="nav-link">
+  你知道HTML中Head标签具体怎么用吗？
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/JSONStringify/" class="nav-link">
+  JSON.stringify()还可以这么玩
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/ObjectAssign/" class="nav-link">
+  Object.assign()的使用指南
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/debounce/" class="nav-link">
+  简单防抖函数中闭包的问题理解
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/throttle/" class="nav-link">
+  简单节流函数中闭包的问题理解
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/doubleBinding/" class="nav-link">
+  多种实现双向绑定方法
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/ReactClassComponent/" class="nav-link">
+  React类组件的一些问题浅析
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/brower/" class="nav-link">
+  浏览器运行原理
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/commonJS&amp;ESmodules/" class="nav-link">
+  commonJS和ESmodules差异
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/DOMDIFF/" class="nav-link">
+  vue中:key=index为什么不建议使用？
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/constUseState/" class="nav-link">
+  为什么useState可以使用const解构赋值？
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/pipeCopy/" class="nav-link">
+  使用管道流复制大文件
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架学习" class="dropdown-title"><span class="title">框架学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/VUE/vueBase/" class="nav-link">
+  vue基础
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/vueComponent/" class="nav-link">
+  vue组件化编码
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/vue_webpack_modules/" class="nav-link">
+  webpacke模块化开发
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/vue-cli/" class="nav-link">
+  vue-cli脚手架
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/vue-router/" class="nav-link">
+  vue-router路由
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/vuex-learn/" class="nav-link">
+  vuex状态管理
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/VueMixin/" class="nav-link">
+  Mixins混入
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/vueBoost/" class="nav-link">
+  vue性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/axios/" class="nav-link">
+  Axios框架
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/ajax/" class="nav-link">
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/mock/" class="nav-link">
+  mock
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/wxprogram/" class="nav-link">
+  小程序入门
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/uniapp/" class="nav-link">
+  uni-app入门
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/Reactbase/" class="nav-link">
+  React基础入门
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/ReactCli/" class="nav-link">
+  React脚手架
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/Redux/" class="nav-link">
+  Redux
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/react-redux/" class="nav-link">
+  react-redux的实现原理
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/Hooks/" class="nav-link">
+  React Hooks
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/reactRender/" class="nav-link">
+  react渲染和更新机制
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/setState/" class="nav-link">
+  setState进阶
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/nextTick/" class="nav-link">
+  Vue.nextTick进阶
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/reactHighCom/" class="nav-link">
+  react高阶组件
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/Reactevent/" class="nav-link">
+  react合成事件分析
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/frontLogin/" class="nav-link">
+  前端登录
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/CORS&amp;proxy/" class="nav-link">
+  CORS跨域和反向代理
+</a></li><li class="dropdown-item"><!----> <a href="/VUE/XHR&amp;AJAX/" class="nav-link">
+  XHR对象和AJAX
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Node/Nodejs/" class="nav-link">
+  Nodejs服务端
+</a></li><li class="dropdown-item"><!----> <a href="/Node/restudyNode/" class="nav-link">
+  重学Node
+</a></li><li class="dropdown-item"><!----> <a href="/Node/restudyWebpack/" class="nav-link">
+  重学Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/Node/promisify/" class="nav-link">
+  手写util.promisify
+</a></li><li class="dropdown-item"><!----> <a href="/Node/Blob/" class="nav-link">
+  Blob数据
+</a></li><li class="dropdown-item"><!----> <a href="/Node/nodejsStreamCopy/" class="nav-link">
+  nodejs管道流复制文件
+</a></li><li class="dropdown-item"><!----> <a href="/Node/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/Node/gitlabci/" class="nav-link">
+  gitlab-ci
+</a></li><li class="dropdown-item"><!----> <a href="/Node/Express/" class="nav-link">
+  Express
+</a></li><li class="dropdown-item"><!----> <a href="/Node/Koa/" class="nav-link">
+  Koa
+</a></li><li class="dropdown-item"><!----> <a href="/Node/koaDeploy/" class="nav-link">
+  koa部署服务器
+</a></li><li class="dropdown-item"><!----> <a href="/Node/MongoDB/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/Node/Mongoose/" class="nav-link">
+  Mongoose
+</a></li><li class="dropdown-item"><!----> <a href="/Node/zx/" class="nav-link">
+  zx库
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript学习" class="dropdown-title"><span class="title">JavaScript学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JavaScript/note/" class="nav-link">
+  js笔记
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/GOGOFACE/" class="nav-link">
+  校招面试冲刺
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/manager/" class="nav-link">
+  js知识整理
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/nodejs/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Promise/" class="nav-link">
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/AOP/" class="nav-link">
+  AOP切面编程(闭包)
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/Generator&amp;yield/" class="nav-link">
+  Generator生成器&amp;Iterator迭代器
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/asyncReturn/" class="nav-link">
+  async中return和return await的区别
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/jsFaceObject/" class="nav-link">
+  js面向对象基础--创建对象
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/jsPtototypeChain/" class="nav-link">
+  js面向对象基础--原型链
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/jsBaseExtends/" class="nav-link">
+  js面向对象基础--继承
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/jsPrototypeExtends/" class="nav-link">
+  js原型继承
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/JavaScriptCodeClean/" class="nav-link">
+  JavaScript代码整洁之道
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/JavaScriptEventLoop/" class="nav-link">
+  JavaScript事件循环各种概念剖析
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/JavaScriptThisPoint/" class="nav-link">
+  JavaScript简单理解this指向
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/es6this/" class="nav-link">
+  谈谈ES6箭头函数this指向问题
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/environment/" class="nav-link">
+  词法环境[[environment]]--闭包
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/zuoyongyu/" class="nav-link">
+  js函数作用域与闭包相关问题
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/varHosting/" class="nav-link">
+  js中的变量提升和函数提升
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/VO&amp;AO/" class="nav-link">
+  JS中的变量对象VO和活动对象AO
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/JScenter/" class="nav-link">
+  JS核心机制（数据类型、垃圾回收机制）
+</a></li><li class="dropdown-item"><!----> <a href="/JavaScript/handCallApplyBind/" class="nav-link">
+  手写call、apply、bind
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据结构与算法" class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/DataStructure/note/" class="nav-link">
+  笔记整理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS特效" class="dropdown-title"><span class="title">CSS特效</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/CSSEffect/moreColumLayout/" class="nav-link">
+  CSS多列布局的实现
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/writeWords/" class="nav-link">
+  打字机效果以及animation中的steps()函数
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/box-shadow/" class="nav-link">
+  CSS的box-shadow创建边框
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/CSSPointshow/" class="nav-link">
+  纯CSS实现的滚动指示器效果
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/img-lazyload/" class="nav-link">
+  图片模糊加载
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/tuozhuai/" class="nav-link">
+  实现一个拖拽
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/positionSticky/" class="nav-link">
+  实现position:sticky
+</a></li><li class="dropdown-item"><!----> <a href="/CSSEffect/lazyLoad/" class="nav-link">
+  实现下拉加载更多，懒加载
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="随便聊聊" class="dropdown-title"><span class="title">随便聊聊</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/talktalk/onePic/" class="nav-link">
+  一张图总结系列
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/argument/" class="nav-link">
+  js的argument
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/bibao/" class="nav-link">
+  闭包个人理解
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/eventloop/" class="nav-link">
+  Event Loop理解
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/chuandicanshu/" class="nav-link">
+  js参数传递理解
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/var/" class="nav-link">
+  聊聊js变量存储的本质和const修改对象问题
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/es6open/" class="nav-link">
+  ES6扩展运算符的使用
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/dataInVue/" class="nav-link">
+  为什么.vue文件中data必须用函数表达
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/jsMaopao/" class="nav-link">
+  浅谈js事件捕获和事件冒泡
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSFaceTest/" class="nav-link">
+  CSS 面试知识点总结
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSFirst/" class="nav-link">
+  CSS 属性继承和优先级算法(权重)
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSSelector/" class="nav-link">
+  了解 CSS 选择器
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSCenter/" class="nav-link">
+  总结一下 CSS 居中的各种方法
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSFloat/" class="nav-link">
+  说说CSS浮动以及清除浮动
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSMargin/" class="nav-link">
+  外边距塌陷问题
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/CSSBFC/" class="nav-link">
+  浅谈BFC
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/HTTP/" class="nav-link">
+  HTTP协议
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/HTTPS/" class="nav-link">
+  聊聊HTTPS工作原理
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/thread/" class="nav-link">
+  进程与线程tcp/ip三次握手
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/HtmlHead/" class="nav-link">
+  你知道HTML中Head标签具体怎么用吗？
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/JSONStringify/" class="nav-link">
+  JSON.stringify()还可以这么玩
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/ObjectAssign/" class="nav-link">
+  Object.assign()的使用指南
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/debounce/" class="nav-link">
+  简单防抖函数中闭包的问题理解
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/throttle/" class="nav-link">
+  简单节流函数中闭包的问题理解
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/doubleBinding/" class="nav-link">
+  多种实现双向绑定方法
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/ReactClassComponent/" class="nav-link">
+  React类组件的一些问题浅析
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/brower/" class="nav-link">
+  浏览器运行原理
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/commonJS&amp;ESmodules/" class="nav-link">
+  commonJS和ESmodules差异
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/DOMDIFF/" class="nav-link">
+  vue中:key=index为什么不建议使用？
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/constUseState/" class="nav-link">
+  为什么useState可以使用const解构赋值？
+</a></li><li class="dropdown-item"><!----> <a href="/talktalk/pipeCopy/" class="nav-link">
+  使用管道流复制大文件
+</a></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="mongodb"><a href="#mongodb" class="header-anchor">#</a> MongoDB</h2> <p>MongoDB是nosql数据库。没有行和列的概念，<strong>用JSON键值对来存储数据</strong>。</p> <p><strong>集合</strong>就相当于“<strong>表</strong>”，<strong>文档</strong>就相当于“<strong>行</strong>”</p> <h3 id="一、基本使用"><a href="#一、基本使用" class="header-anchor">#</a> 一、基本使用</h3> <p><code>mongo</code>：连接数据库</p> <p><code>show dbs</code>：查看当前数据计算机中的数据库</p> <p><code>use DB_name</code>：使用切换到数据库、创建数据库（<strong>use 之后才能使用db对象进行操作</strong>）</p> <p><code>db</code>：查看当前所在的数据库</p> <p><code>show collections</code>：查看数据库中的表（集合）</p> <h4 id="_1】插入数据"><a href="#_1】插入数据" class="header-anchor">#</a> 1】插入数据</h4> <p><code>db.user.insert({&quot;username&quot;:&quot;zhangsan&quot;,&quot;age&quot;:20})</code>：创建user表（集合）以及插入数据</p> <p><code>db.user.drop()</code>：删除user表（集合）</p> <p><code>db.dropDatabase()</code>：删除数据库，首先需要use DB_name切换到数据库，才能删除数据库</p> <h4 id="_2】查找数据"><a href="#_2】查找数据" class="header-anchor">#</a> 2】查找数据</h4> <p><code>db.user.find()</code>：查找数据库中的user表（集合）中的所有记录</p> <p><code>db.user.find({&quot;age&quot;:20})</code>：查找user表（集合）中age=20的记录</p> <p><code>db.user.find({&quot;age&quot;:{$gt:22}})</code>：查找user表（集合）中age&gt;22的记录</p> <p><code>db.user.find({&quot;age&quot;:{$gte:22}})</code>：查找user表（集合）中age&gt;=22的记录</p> <p><code>db.user.find({&quot;age&quot;:{$lt:22}})</code>：查找user表（集合）中age&lt;22的记录</p> <p><code>db.user.find({&quot;age&quot;:{$lte:22}})</code>：查找user表（集合）中age&lt;=22的记录</p> <p><code>db.user.find({&quot;age&quot;:{$gte:20,$lte:30}})</code>：查找user表（集合）中20&lt;=age&lt;=30的记录</p> <p><code>db.user.find({&quot;username&quot;:/zhang/})</code>：模糊查找user表（集合）中的记录（正则表达式一致）</p> <p><code>db.user.find({},{name:1})</code>：指定列查询数据（第二个参数）只显示name列的记录</p> <p><code>db.user.find().sort({age:-1})</code>：排序，1表示升序，-1表示降序</p> <p><code>db.user.find().limit(5)</code>：查询前5条数据</p> <p><code>db.user.find().skip(10)</code>：查询10条以后的数据</p> <p><code>db.user.find().skip(2).limit(2)</code>：查询第3-4条数据（可用于列表分页）</p> <p><code>db.user.find().count()</code>：查询表中的记录数量（统计数据total）</p> <p>还可以使用for循环进行造数据：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">100</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  db<span class="token punctuation">.</span>admin<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">&quot;username&quot;</span><span class="token operator">:</span><span class="token string">&quot;wang&quot;</span><span class="token operator">+</span>i<span class="token punctuation">,</span><span class="token string">&quot;age&quot;</span><span class="token operator">:</span>i<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+db<span class="token punctuation">.</span>admin<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//自动进行分页展示，每页20条数据</span>
+db<span class="token punctuation">.</span>admin<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//100</span>
+db<span class="token punctuation">.</span>user<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">skip</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">limit</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token comment">//自定义分页展示，pageSize=10，第二页的数据</span>
+</code></pre></div><p><code>db.user.find({$or:[{age:22},{age:25}]})</code>：查询age=22或者age=25的记录</p> <p><code>db.user.findOne()</code>：只查询第一条记录</p> <p><strong>find查出来是一个数组，findOne查出来是一个对象</strong></p> <h4 id="_3】修改数据"><a href="#_3】修改数据" class="header-anchor">#</a> 3】修改数据</h4> <p>前面是查询条件，后面是更新操作（$set更新所有匹配的项目），最后是是否开启更新多条记录</p> <p><code>db.user.update({&quot;name&quot;:&quot;小明&quot;},{$set:{&quot;age&quot;:33}},{multi:true})</code>：查找name=&quot;小明&quot;的记录，把age改成33并且修改多条查询到的数据</p> <p><code>db.user.update({&quot;name&quot;:&quot;小明&quot;},{&quot;age&quot;:16})</code>：查找name=&quot;小明&quot;的记录，全部替换成{&quot;age&quot;:16}</p> <h4 id="_4】删除数据"><a href="#_4】删除数据" class="header-anchor">#</a> 4】删除数据</h4> <p><code>db.user.remove({age:132})</code>：删除age=132的数据</p> <p><code>db.user.remove({})</code>：删除所有数据</p> <p><code>db.user.remove({},{justOne:true})</code>：只删除查找到的第一条数据</p> <h3 id="二、索引基础"><a href="#二、索引基础" class="header-anchor">#</a> 二、索引基础</h3> <p>设置索引可以优化查询速度，但是插入的速度会变慢。</p> <p><code>db.user.find({&quot;username&quot;:zhangsan24231}).explain(&quot;executionStatus&quot;)</code>：查看代码执行信息</p> <h4 id="_1】创建索引"><a href="#_1】创建索引" class="header-anchor">#</a> 1】创建索引</h4> <p><code>db.user.ensureIndex({&quot;username&quot;:1})</code>：给user表中的username字段创建一个索引</p> <p><code>db.user.ensureIndex({&quot;username&quot;:1},{&quot;name&quot;:&quot;userindex&quot;})</code>：可以传入第二个参数，给当前设置的索引起别名</p> <h4 id="_2】查看表中的索引"><a href="#_2】查看表中的索引" class="header-anchor">#</a> 2】查看表中的索引</h4> <p><code>db.user.getIndexes()</code>：获取user表中的所有索引</p> <h4 id="_3】删除索引"><a href="#_3】删除索引" class="header-anchor">#</a> 3】删除索引</h4> <p><code>db.user.dropIndex({&quot;username&quot;:1})</code>：删除user表中的username字段的一个索引</p> <h4 id="_4】复合索引"><a href="#_4】复合索引" class="header-anchor">#</a> 4】复合索引</h4> <p><code>db.user.ensureIndex({&quot;username&quot;:1,&quot;age&quot;:-1})</code>：数字1表示username键的索引按升序存储，-1表示age键的索引按降序存储。</p> <ul><li><code>db.user.find({&quot;username&quot;:&quot;zhangsan&quot;,&quot;age&quot;:30})</code>：会命中当前复合索引</li> <li><code>db.user.find({&quot;username&quot;:&quot;zhangsan&quot;})</code>：会命中当前复合索引</li> <li><code>db.user.find({&quot;age&quot;:30,&quot;username&quot;:&quot;zhangsan&quot;})</code>：不会会命中当前复合索引（如果查询条件中的键值顺序和复合索引中创建顺序不一致，MongoDB会帮我智能调整顺序）</li> <li><code>db.user.find({&quot;age&quot;:30})</code>：<strong>不会</strong>命中当前复合索引（如果想用到复合索引，必须在查询条件中包含复合索引中的前N个索引列）</li></ul> <h4 id="_5】唯一索引"><a href="#_5】唯一索引" class="header-anchor">#</a> 5】唯一索引</h4> <p><code>db.user.ensureIndex({&quot;age&quot;:1},{&quot;unique&quot;:true})</code>：为age键创建唯一索引（age值不能重复）</p> <h3 id="三、权限配置"><a href="#三、权限配置" class="header-anchor">#</a> 三、权限配置</h3> <h4 id="_1】创建超级管理员账户（root）"><a href="#_1】创建超级管理员账户（root）" class="header-anchor">#</a> 1】创建超级管理员账户（root）</h4> <div class="language-js extra-class"><pre class="language-js"><code>use admin
+
+db<span class="token punctuation">.</span><span class="token function">createUser</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  user<span class="token operator">:</span><span class="token string">'admin'</span><span class="token punctuation">,</span>
+  pwd<span class="token operator">:</span><span class="token string">'123456'</span><span class="token punctuation">,</span>
+  roles<span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">{</span>role<span class="token operator">:</span><span class="token string">'root'</span><span class="token punctuation">,</span>db<span class="token operator">:</span><span class="token string">'admin'</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><h4 id="_2】修改数据库配置文件"><a href="#_2】修改数据库配置文件" class="header-anchor">#</a> 2】修改数据库配置文件</h4> <p>修改配置文件，启用权限配置（不管修改什么配置文件都需要备份一下该文件）</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//路径：mongoDB\Server\4.0\bin\mongod.cfg</span>
+
+<span class="token comment">//配置：</span>
+
+security<span class="token operator">:</span>
+		authorization<span class="token operator">:</span>enabled
+</code></pre></div><h4 id="_3】重启mongodb服务"><a href="#_3】重启mongodb服务" class="header-anchor">#</a> 3】重启mongodb服务</h4> <h4 id="_4】使用超级管理员账户连接数据库"><a href="#_4】使用超级管理员账户连接数据库" class="header-anchor">#</a> 4】使用超级管理员账户连接数据库</h4> <div class="language-js extra-class"><pre class="language-js"><code>mongo admin <span class="token operator">-</span>u 用户名 <span class="token operator">-</span>p 密码
+
+mongo <span class="token number">192.168</span><span class="token number">.1</span><span class="token number">.200</span><span class="token operator">:</span><span class="token number">27017</span><span class="token operator">/</span>test <span class="token operator">-</span>u user <span class="token operator">-</span>p password
+</code></pre></div><h4 id="_5】给eggcms数据库创建一个用户，只能访问eggcms不能访问其他数据库（dbowner对当前数据库有所有的权限）"><a href="#_5】给eggcms数据库创建一个用户，只能访问eggcms不能访问其他数据库（dbowner对当前数据库有所有的权限）" class="header-anchor">#</a> 5】给eggcms数据库创建一个用户，只能访问eggcms不能访问其他数据库（dbOwner对当前数据库有所有的权限）</h4> <div class="language-js extra-class"><pre class="language-js"><code>use eggcms
+
+db<span class="token punctuation">.</span><span class="token function">craeteUser</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  user<span class="token operator">:</span><span class="token string">'eggadmin'</span><span class="token punctuation">,</span>
+  pwd<span class="token operator">:</span><span class="token string">'123456'</span><span class="token punctuation">,</span>
+  roles<span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">{</span>role<span class="token operator">:</span><span class="token string">'dbOwner'</span><span class="token punctuation">,</span>db<span class="token operator">:</span><span class="token string">'eggcms'</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="_6】命令"><a href="#_6】命令" class="header-anchor">#</a> 6】命令</h4> <ul><li><code>show users</code>：查看当前数据库下的用户</li> <li><code>db.dropUser('eggadmin')</code>：删除用户</li> <li><code>db.updateUser('admin',{pwd:'password'})</code>：修改用户密码</li> <li><code>db.auth('admin','password')</code>：密码认证</li></ul> <h3 id="四、表与表之间关系"><a href="#四、表与表之间关系" class="header-anchor">#</a> 四、表与表之间关系</h3> <ul><li>一对一
+<ul><li>例如：一个人对应一个唯一身份证号，即为一对一的关系</li></ul></li> <li>一对多
+<ul><li>例如：一个班级对应多名学生，即为一对多的关系</li></ul></li> <li>多对多
+<ul><li>例如：一个学生可以选多门课程，而同一课程可以被多个学生选修，彼此的对应关系，即是多对多的关系</li></ul></li></ul> <h3 id="五、聚合管道"><a href="#五、聚合管道" class="header-anchor">#</a> 五、聚合管道</h3> <p>aggregation pipeline：使用聚合管道可以<strong>对集合中的文档进行变换和组合</strong>。（作用：表的关联查询、数据的统计）</p> <p>MongoDB中使用<code>db.COLLECTION_NAME.aggregate([{&lt;stage&gt;},...])</code>方法来构建和使用聚合管道。先看下官网给的实例，感受一下聚合管道的用法：</p> <p><img src="https://img-blog.csdnimg.cn/20210103121756610.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTIyMTAzNg==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p> <h4 id="_1】管道操作符："><a href="#_1】管道操作符：" class="header-anchor">#</a> 1】管道操作符：</h4> <p><code>$project</code>：增加、删除、重命名字段（对列进行筛选）</p> <p><code>$match</code>：条件匹配。只满足条件的文档才能进入下一阶段</p> <p><code>$limit</code>：限制结果的数量</p> <p><code>$skip</code>：跳过文档的数量</p> <p><code>$sort</code>：条件排序</p> <p><code>$group</code>：条件组合、统计结果</p> <p><code>$lookup</code>：用以引入其它集合的数据（表之间关联查询）</p> <h4 id="_2】sql和nosql对比："><a href="#_2】sql和nosql对比：" class="header-anchor">#</a> 2】sql和nosql对比：</h4> <table><thead><tr><th style="text-align:left;">SQL</th> <th>NOSQL</th></tr></thead> <tbody><tr><td style="text-align:left;">WHERE</td> <td>$match</td></tr> <tr><td style="text-align:left;">GROUP BY</td> <td>$group</td></tr> <tr><td style="text-align:left;">HAVING</td> <td>$match</td></tr> <tr><td style="text-align:left;">SELECT</td> <td>$project</td></tr> <tr><td style="text-align:left;">ORDER BY</td> <td>$sort</td></tr> <tr><td style="text-align:left;">LIMIT</td> <td>$limit</td></tr> <tr><td style="text-align:left;">SUM()</td> <td>$sum</td></tr> <tr><td style="text-align:left;">COUNT()</td> <td>$sum</td></tr> <tr><td style="text-align:left;">JOIN</td> <td>$lookup</td></tr></tbody></table> <h4 id="_3】-project"><a href="#_3】-project" class="header-anchor">#</a> 3】<code>$project</code></h4> <div class="language-js extra-class"><pre class="language-js"><code>db<span class="token punctuation">.</span>order<span class="token punctuation">.</span><span class="token function">aggregate</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        $project<span class="token operator">:</span><span class="token punctuation">{</span>order_id<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span> trade_no<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span> all_price<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">}</span>
+        <span class="token comment">//只显示order_id、trade_no和all_price字段</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="_4】-match"><a href="#_4】-match" class="header-anchor">#</a> 4】<code>$match</code></h4> <div class="language-js extra-class"><pre class="language-js"><code>db<span class="token punctuation">.</span>order<span class="token punctuation">.</span><span class="token function">aggregate</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        $project<span class="token operator">:</span><span class="token punctuation">{</span>order_id<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span> trade_no<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span> all_price<span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">}</span>
+        <span class="token comment">//管道1：筛选需要的字段</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        $match<span class="token operator">:</span><span class="token punctuation">{</span>all_price<span class="token operator">:</span><span class="token punctuation">{</span>$gte<span class="token operator">:</span><span class="token number">90</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+        <span class="token comment">//（all_price&gt;=90）管道2：查询条件</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="_5】-group"><a href="#_5】-group" class="header-anchor">#</a> 5】<code>$group</code></h4> <div class="language-js extra-class"><pre class="language-js"><code>db<span class="token punctuation">.</span>order<span class="token punctuation">.</span><span class="token function">aggregate</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        $group<span class="token operator">:</span><span class="token punctuation">{</span>id<span class="token operator">:</span><span class="token string">&quot;$order_id&quot;</span><span class="token punctuation">,</span> total<span class="token operator">:</span><span class="token punctuation">{</span>$sum<span class="token operator">:</span><span class="token string">&quot;$num&quot;</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+        <span class="token comment">//以order_id进行分组，再将相同的id的num字段进行求和</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="_6】-sort"><a href="#_6】-sort" class="header-anchor">#</a> 6】<code>$sort</code></h4> <div class="language-js extra-class"><pre class="language-js"><code>db<span class="token punctuation">.</span>order<span class="token punctuation">.</span><span class="token function">aggregate</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        $sort<span class="token operator">:</span><span class="token punctuation">{</span>all_price<span class="token operator">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">}</span>
+        <span class="token comment">//将数据以all_price字段进行排序：-1表示降序，1表示升序</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="_7】-limit"><a href="#_7】-limit" class="header-anchor">#</a> 7】<code>$limit</code></h4> <div class="language-js extra-class"><pre class="language-js"><code>db<span class="token punctuation">.</span>order<span class="token punctuation">.</span><span class="token function">aggregate</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        $limit<span class="token operator">:</span><span class="token number">1</span>
+        <span class="token comment">//限制输出的数据条数（结合$skip进行分页查询操作）</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="_8】-skip"><a href="#_8】-skip" class="header-anchor">#</a> 8】<code>$skip</code></h4> <div class="language-js extra-class"><pre class="language-js"><code>db<span class="token punctuation">.</span>order<span class="token punctuation">.</span><span class="token function">aggregate</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        $skip<span class="token operator">:</span><span class="token number">1</span>
+        <span class="token comment">//跳过第一条数据，进行数据展示</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="_9】-lookup"><a href="#_9】-lookup" class="header-anchor">#</a> 9】<code>$lookup</code></h4> <p>表关联：</p> <div class="language-js extra-class"><pre class="language-js"><code>db<span class="token punctuation">.</span>order<span class="token punctuation">.</span><span class="token function">aggregate</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token comment">//在order表中进行管道操作(主表)</span>
+    <span class="token punctuation">{</span>
+        $lookup<span class="token operator">:</span><span class="token punctuation">{</span><span class="token comment">//关联表查询</span>
+            <span class="token keyword">from</span><span class="token operator">:</span><span class="token string">&quot;order_item&quot;</span><span class="token punctuation">,</span><span class="token comment">//需要关联的表是：order_item(非主表)</span>
+            localField<span class="token operator">:</span><span class="token string">&quot;order_id&quot;</span><span class="token punctuation">,</span><span class="token comment">//order表(主表)中需要关联的字段</span>
+            foreignField<span class="token operator">:</span><span class="token string">&quot;order_id&quot;</span><span class="token punctuation">,</span><span class="token comment">//order_item(非主表)中需要关联的字段</span>
+            <span class="token keyword">as</span><span class="token operator">:</span><span class="token string">&quot;items&quot;</span><span class="token comment">//关联查询后把order_item(非主表)对应结果放到order表(主表)的items字段中</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment">//[{order_id:1, trade_no:007, items:[{order_id:1,title:'书包'},{order_id:1,title:'笔记本'}]},{order_id:2, trade_no:007, items:[{order_id:2,title:'笔'}]}]</span>
+</code></pre></div><h3 id="六、备份与还原"><a href="#六、备份与还原" class="header-anchor">#</a> 六、备份与还原</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">#备份</span>
+mongodump -h dbhost -d dbname -o dbdirectory
+mongodump -h <span class="token number">127.0</span>.0.1 -d orders -o D:<span class="token punctuation">\</span>backup<span class="token punctuation">\</span>db
+
+-h：mongoDB所在服务器地址，例如：127.0.0.1当然也可以指定端口号127.0.0.1:27017
+-d：需要备份的数据库实例，例如：test
+-o：备份的数据存放位置，例如：/home/mongodump/，当然该目录需要提前建立，这个目录里面存放数据库实例的备份数据。
+
+<span class="token comment">#还原</span>
+mongorestore -h dbhost -d dbname dbdirectory
+mongorestore -h <span class="token number">127.0</span>.0.1 -d orders D:<span class="token punctuation">\</span>backup<span class="token punctuation">\</span>db
+
+-h：mongoDB所在服务器地址
+-d：需要备份的数据库实例，例如：test，当然这个名称也可以和备份的时候不一样，比如test2
+</code></pre></div><h2 id="nodejs操作mongodb数据库"><a href="#nodejs操作mongodb数据库" class="header-anchor">#</a> nodejs操作mongoDB数据库</h2> <h4 id="_1】新建项目安装依赖"><a href="#_1】新建项目安装依赖" class="header-anchor">#</a> 1】新建项目安装依赖</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">#新建项目</span>
+<span class="token function">mkdir</span> mongoproject
+<span class="token builtin class-name">cd</span> mongoproject
+<span class="token comment">#创建npm</span>
+<span class="token function">npm</span> init
+<span class="token comment">#安装依赖</span>
+<span class="token function">npm</span> <span class="token function">install</span> mongodb --save
+</code></pre></div><h4 id="_2】引入模块"><a href="#_2】引入模块" class="header-anchor">#</a> 2】引入模块</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//app.js</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> MongoClient <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongodb'</span><span class="token punctuation">)</span>
+<span class="token comment">//连接url</span>
+<span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token string">'mongodb://localhost:27017'</span><span class="token punctuation">;</span>
+<span class="token comment">//数据库名</span>
+<span class="token keyword">const</span> dbName <span class="token operator">=</span> <span class="token string">'mongoproject'</span>
+<span class="token comment">//创建mongo服务</span>
+<span class="token keyword">const</span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MongoClient</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token punctuation">{</span> useUnifiedTopology<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//使用连接方法连接服务</span>
+client<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'数据库连接成功'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> db <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">db</span><span class="token punctuation">(</span>dbName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//返回的db对象进行数据库的操作</span>
+
+    <span class="token comment">//1、查找数据</span>
+    db<span class="token punctuation">.</span><span class="token function">collection</span><span class="token punctuation">(</span><span class="token string">'orders'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        <span class="token comment">//异步操作，操作数据库完毕以后一定要 关闭数据库连接</span>
+        client<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">//2、增加数据</span>
+    db<span class="token punctuation">.</span><span class="token function">collection</span><span class="token punctuation">(</span><span class="token string">'orders'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">insertOne</span><span class="token punctuation">(</span>
+        <span class="token punctuation">{</span> <span class="token string">'orderId'</span><span class="token operator">:</span> <span class="token string">'000'</span><span class="token punctuation">,</span> <span class="token string">'name'</span><span class="token operator">:</span> <span class="token string">'order1'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+        <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'增加成功'</span><span class="token punctuation">,</span> result<span class="token punctuation">.</span>insertedId<span class="token punctuation">)</span>
+            client<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">//3、修改数据</span>
+    db<span class="token punctuation">.</span><span class="token function">collection</span><span class="token punctuation">(</span><span class="token string">'orders'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">updateOne</span><span class="token punctuation">(</span>
+        <span class="token punctuation">{</span> <span class="token string">'orderId'</span><span class="token operator">:</span> <span class="token string">'000'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> $<span class="token keyword">set</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">'order2'</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+        <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'修改成功'</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span>
+            client<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">//4、删除一条数据</span>
+    db<span class="token punctuation">.</span><span class="token function">collection</span><span class="token punctuation">(</span><span class="token string">'orders'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">deleteOne</span><span class="token punctuation">(</span>
+        <span class="token punctuation">{</span> <span class="token string">'orderId'</span><span class="token operator">:</span> <span class="token string">'000'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+        <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'删除一条数据成功'</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span>
+            client<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    
+    <span class="token comment">//5、删除多条数据</span>
+    db<span class="token punctuation">.</span><span class="token function">collection</span><span class="token punctuation">(</span><span class="token string">'orders'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">deleteMany</span><span class="token punctuation">(</span>
+        <span class="token punctuation">{</span> <span class="token string">'orderId'</span><span class="token operator">:</span> <span class="token string">'000'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> result</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'删除多条数据成功'</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span>
+            client<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><h4 id="_3】在node服务中连接数据库"><a href="#_3】在node服务中连接数据库" class="header-anchor">#</a> 3】在node服务中连接数据库</h4> <p>每次请求都是用的相同的实例client</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./module/route'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">{</span> MongoClient <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongodb'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token string">'mongodb://localhost:27017'</span>
+<span class="token keyword">const</span> dbName <span class="token operator">=</span> <span class="token string">'rayhomie'</span>
+<span class="token comment">//此时，每次请求都是用的相同的实例client</span>
+<span class="token keyword">const</span> client  <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">MongoClient</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> <span class="token punctuation">{</span> useUnifiedTopology<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//注册web服务</span>
+http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span>app<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//配置路由</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+  client<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">const</span> db <span class="token operator">=</span>client<span class="token punctuation">.</span><span class="token function">db</span><span class="token punctuation">(</span>dbName<span class="token punctuation">)</span>
+    
+    <span class="token comment">//查询数据</span>
+    db<span class="token punctuation">.</span><span class="token function">collection</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>data</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+      client<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//操作数据库之后一定要关闭连接</span>
+      res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>每次请求都创建新的client实例</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./module/route'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">{</span> MongoClient <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongodb'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token string">'mongodb://localhost:27017'</span>
+<span class="token keyword">const</span> dbName <span class="token operator">=</span> <span class="token string">'rayhomie'</span>
+
+<span class="token comment">//注册web服务</span>
+http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span>app<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//配置路由</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+  <span class="token comment">//每次请求都会重新创建新的实例</span>
+  MongoClient<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>client</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+     <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">const</span> db <span class="token operator">=</span>client<span class="token punctuation">.</span><span class="token function">db</span><span class="token punctuation">(</span>dbName<span class="token punctuation">)</span>
+    
+    <span class="token comment">//查询数据</span>
+    db<span class="token punctuation">.</span><span class="token function">collection</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>data</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+      client<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">//操作数据库之后一定要关闭连接</span>
+      res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">8/1/2021, 1:43:20 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.27102bc9.js" defer></script><script src="/assets/js/2.8dfe8e5f.js" defer></script><script src="/assets/js/40.eeab06c6.js" defer></script>
+  </body>
+</html>
